@@ -1,0 +1,867 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Avantgarde";
+    src: url(/src/assets/fonts/AvantGarde-Bold.otf);
+}
+
+html {
+    margin-bottom: 100%;
+}
+
+header {
+    .header {
+        width: 100%;
+        height: 8rem;
+        background-color: #000000;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+
+
+        h2 {
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                font-size: 36px;
+                font-family: "Avantgarde";
+                color: white;
+            }
+        }
+
+        .nav-list-area {
+            display: flex;
+            gap: 50px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-family: "Avantgarde";
+            }
+
+            .nav-list::before {
+                position: absolute;
+                width: 0;
+                left: 0;
+                bottom: 0;
+                opacity: 0;
+                content: "";
+                transition: all 0.3s ease-in-out;
+                border-bottom: 2px solid crimson;
+
+            }
+
+            .nav-list:hover::before {
+                width: 40%;
+                opacity: 1;
+                position: absolute;
+
+            }
+        }
+    }
+}
+
+main {
+    #bg-img {
+        height: calc(1112px - 170px);
+        background-image: url(/src/assets/img/hero_02.jpg);
+        background-repeat: no-repeat;
+        background-size: 640px auto;
+        background-position: 70% 0%;
+        background-color: #000000;
+
+
+        h2 {
+            font-size: 78px;
+            font-family: avantgarde;
+            color: white;
+            position: absolute;
+            left: 342px;
+            top: 255px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            background-color: #E9204F;
+            top: -50px;
+            left: 4px;
+            width: 70px;
+            height: 3px;
+        }
+
+        button {
+            width: 190px;
+            height: 60px;
+            border: 2px solid #E9204F;
+            background-color: transparent;
+            color: white;
+            position: relative;
+            left: 352px;
+            top: 370px;
+
+            a {
+                z-index: 1;
+                position: relative;
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+
+        button::after {
+            content: "";
+            background-color: #E9204F;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        button:hover::after {
+            width: 100%;
+        }
+
+        .boxs {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 93.60%;
+            gap: 30px;
+
+            .future-vision {
+                width: 379px;
+                height: 385px;
+                background-color: #E9204F;
+                cursor: pointer;
+
+                .cart {
+                    color: white;
+                    border: 2px solid white;
+                    font-size: 40px;
+                    position: relative;
+                    left: 50px;
+                    top: 70px;
+                }
+
+                .title {
+                    position: relative;
+
+                    h3 {
+                        font-size: 24px;
+                        color: white;
+                        font-weight: 700;
+                        font-family: avantgarde;
+                        position: relative;
+                        left: 49px;
+                        top: 160px;
+                    }
+
+                    h3::before {
+                        content: "It is a long established fact that a reader will be distracted by the readable content of a page.";
+                        position: absolute;
+                        right: 100px;
+                        top: 50px;
+                        font-size: 16px;
+                        font-weight: 250;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+
+                .title::before {
+                    position: absolute;
+                    content: "";
+                    width: 40px;
+                    height: 2px;
+                    background-color: rgb(255, 255, 255);
+                    left: 52px;
+                    top: 196px;
+                }
+            }
+
+
+
+            .product-design {
+                width: 379px;
+                height: 385px;
+                background-color: rgb(25, 26, 26);
+                cursor: pointer;
+                position: relative;
+                transition: all .7s ease-in-out;
+
+                .raket {
+                    color: #E9204F;
+                    font-size: 40px;
+                    position: relative;
+                    left: 50px;
+                    top: 70px;
+                    transition: all .7 ease-in-out
+                }
+
+                .title {
+                    position: relative;
+
+                    h3 {
+                        font-size: 24px;
+                        color: white;
+                        font-weight: 700;
+                        font-family: avantgarde;
+                        position: relative;
+                        left: 49px;
+                        top: 160px;
+                    }
+
+                    h3::before {
+                        content: "It is a long established fact that a reader will be distracted by the readable content of a page.";
+                        position: absolute;
+                        right: 100px;
+                        top: 50px;
+                        font-size: 16px;
+                        font-weight: 250;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+
+                .title::before {
+                    position: absolute;
+                    content: "";
+                    width: 40px;
+                    height: 2px;
+                    background-color: rgb(255, 255, 255);
+                    left: 52px;
+                    top: 196px;
+                }
+            }
+
+            .product-design::before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 35px;
+                background-color: #E9204F;
+                bottom: -35px;
+                left: 195px;
+
+            }
+
+            .product-design:hover {
+                background-color: #E9204F;
+                color: white;
+
+                .raket {
+                    color: #fff;
+                }
+            }
+
+
+
+            .inovative-solutions {
+
+                width: 379px;
+                height: 385px;
+                background-color: rgb(25, 26, 26);
+                cursor: pointer;
+                position: relative;
+                transition: all .7s ease-in-out;
+
+
+                .pirok {
+                    color: #E9204F;
+                    font-size: 40px;
+                    position: relative;
+                    left: 50px;
+                    top: 70px;
+                    transition: all .7 ease-in-out
+                }
+
+                .title {
+                    position: relative;
+
+                    .redline {
+                        width: 19px;
+                        height: 65px;
+                        background-color: #E9204F;
+                        position: absolute;
+                        right: -18px;
+                        top: 279px;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        color: white;
+                        font-weight: 700;
+                        font-family: avantgarde;
+                        position: relative;
+                        left: 49px;
+                        top: 160px;
+                    }
+
+                    h3::before {
+                        content: "It is a long established fact that a reader will be distracted by the readable content of a page.";
+                        position: absolute;
+                        right: 100px;
+                        top: 50px;
+                        font-size: 16px;
+                        font-weight: 250;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+
+                .title::before {
+                    position: absolute;
+                    content: "";
+                    width: 40px;
+                    height: 2px;
+                    background-color: rgb(255, 255, 255);
+                    left: 52px;
+                    top: 196px;
+                }
+            }
+
+            .inovative-solutions::before {
+
+                content: "";
+                width: calc(100% + 19px);
+                position: absolute;
+                height: 20px;
+                background-color: #E9204F;
+                bottom: -20px;
+                left: 0;
+
+            }
+
+            .inovative-solutions:hover {
+                background-color: #E9204F;
+                color: white;
+
+                .pirok {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    #service {
+        .title {
+            position: relative;
+
+            h2 {
+                position: absolute;
+                left: 348px;
+                bottom: -337px;
+                font-size: 48px;
+                font-family: 'Avantgarde';
+                font-weight: 700;
+            }
+
+            h2::before {
+                position: absolute;
+                bottom: 100px;
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: rgb(233, 32, 79);
+            }
+
+            h4 {
+                position: absolute;
+                left: 351px;
+                top: 350px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #E9204F;
+            }
+        }
+
+        .servis-area {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            top: 453px;
+            margin-bottom: 30px;
+        }
+
+        .future-vision {
+            width: 379px;
+            height: 385px;
+            background: linear-gradient(90deg, rgba(4, 4, 22, 1) 0%, rgba(246, 246, 246, 1) 0%);
+            cursor: pointer;
+
+            .cart {
+                color: white;
+                border: 2px solid white;
+                font-size: 40px;
+                position: relative;
+                left: 50px;
+                top: 70px;
+            }
+
+            .title {
+                position: relative;
+
+                h3 {
+                    font-size: 24px;
+                    color: black;
+                    font-weight: 700;
+                    font-family: avantgarde;
+                    position: relative;
+                    left: 49px;
+                    top: 160px;
+                }
+
+                h3::before {
+                    content: "It is a long established fact that a reader will be distracted by the readable content of a page.";
+                    position: absolute;
+                    right: 100px;
+                    top: 50px;
+                    font-size: 16px;
+                    font-weight: 250;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+
+            .title::before {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(4, 4, 22, 1) 0%, rgba(246, 246, 246, 1) 0%);
+                left: 52px;
+                top: 196px;
+            }
+
+            .horse-icon {
+                position: relative;
+                left: 50px;
+                top: 56px;
+                width: 100%;
+                height: 0%;
+
+                i {
+                    font-size: 58px;
+                    color: #E9204F;
+                }
+            }
+
+            .list-icon {
+                position: relative;
+                left: 50px;
+                top: 56px;
+                width: 100%;
+                height: 0%;
+
+                i {
+                    font-size: 58px;
+                    color: #E9204F;
+                }
+            }
+
+            .chart-icon {
+                position: relative;
+                left: 50px;
+                top: 56px;
+                width: 100%;
+                height: 0%;
+
+                i {
+                    font-size: 58px;
+                    color: #E9204F;
+                }
+            }
+
+            .clipboard-icon {
+                position: relative;
+                left: 50px;
+                top: 56px;
+                width: 100%;
+                height: 0%;
+
+                i {
+                    font-size: 58px;
+                    color: #E9204F;
+                }
+            }
+
+            .pen-icon {
+                position: relative;
+                left: 50px;
+                top: 56px;
+                width: 100%;
+                height: 0%;
+
+                i {
+                    font-size: 58px;
+                    color: #E9204F;
+                }
+            }
+
+            .pen-icon::before {
+                position: absolute;
+                content: "";
+                top: 470px;
+                left: 135px;
+                width: 2px;
+                height: 80px;
+                background-color: rgb(233, 32, 79);
+            }
+
+            .chat-icon {
+                position: relative;
+                left: 50px;
+                top: 56px;
+                width: 100%;
+                height: 0%;
+
+                i {
+                    font-size: 58px;
+                    color: #E9204F;
+                }
+            }
+
+            .icon-right1 {
+                position: absolute;
+                bottom: 43px;
+                left: 403px;
+                font-size: 30px;
+                color: rgba(246, 246, 246, 1)
+            }
+
+            .icon-right2 {
+                position: absolute;
+                bottom: 43px;
+                left: 813px;
+                font-size: 30px;
+                color: rgba(246, 246, 246, 1)
+            }
+
+            .icon-right3 {
+                position: absolute;
+                bottom: 43px;
+                left: 1224px;
+                font-size: 30px;
+                color: rgba(246, 246, 246, 1)
+            }
+
+            .icon-right4 {
+                position: absolute;
+                bottom: 27px;
+                left: 403px;
+                font-size: 30px;
+                color: rgba(246, 246, 246, 1)
+            }
+
+            .icon-right5 {
+                position: absolute;
+                bottom: 27px;
+                left: 813px;
+                font-size: 30px;
+                color: rgba(246, 246, 246, 1)
+            }
+
+            .icon-right6 {
+                position: absolute;
+                bottom: 27px;
+                left: 1224px;
+                font-size: 30px;
+                color: rgba(246, 246, 246, 1)
+            }
+        }
+
+        .future-vision:hover {
+            background: #E9204F;
+            color: #fff;
+            transition: 1s ease-in-out;
+
+            i {
+                color: white;
+            }
+        }
+    }
+
+    #work {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 777px;
+
+        .work-title {
+            h2 {
+                position: absolute;
+                left: 348px;
+                bottom: 238px;
+                font-size: 48px;
+                font-family: 'Avantgarde';
+                font-weight: 700;
+            }
+
+            h2::before {
+                position: absolute;
+                bottom: 80px;
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: rgb(233, 32, 79);
+            }
+
+            h4 {
+                position: absolute;
+                left: 353px;
+                top: 29px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #E9204F;
+            }
+        }
+
+        .work-categories {
+            ul {
+                display: flex;
+                gap: 14px;
+                position: relative;
+                left: 693px;
+                top: 26px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #101010;
+                    font-family: 'Avantgarde';
+                }
+
+                a:hover {
+                    color: #E9204F;
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+
+        .work-categories::before {
+            position: absolute;
+            right: 765px;
+            bottom: 259px;
+            content: "";
+            width: 24px;
+            height: 1px;
+            background-color: #E9204F;
+        }
+
+        .photos {
+            position: absolute;
+            left: 352px;
+            top: 111px;
+            width: 60%;
+
+            img {
+                width: 100%;
+            }
+
+            .pic-small {
+                position: relative;
+
+                span {
+                    position: absolute;
+                    left: 64px;
+                    top: 95px;
+                    font-size: 31px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: -1;
+                }
+            }
+
+            .pic-small:hover {
+                background-color: #000000;
+                z-index: 1;
+
+                img {
+                    opacity: 0;
+                }
+            }
+
+            .pic-small2 {
+                position: relative;
+
+                span {
+                    position: absolute;
+                    left: 126px;
+                    top: 95px;
+                    font-size: 31px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: -1;
+                }
+            }
+
+            .pic-small2:hover {
+                background-color: #000000;
+                z-index: 1;
+
+                img {
+                    opacity: 0;
+                }
+            }
+
+            .big-pic {
+                position: relative;
+                width: 130%;
+
+                img {
+                    width: 100%;
+                    height: 500px;
+                }
+
+                span {
+                    position: absolute;
+                    left: 92px;
+                    top: 145px;
+                    font-size: 31px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: -1;
+                }
+            }
+
+            .big-pic:hover {
+                background-color: #000000;
+                z-index: 1;
+
+                img {
+                    opacity: 0;
+                }
+            }
+
+            .big-pic2 {
+                position: relative;
+                right: 759px;
+                width: 100%;
+                top: 33px;
+
+                span {
+                    position: absolute;
+                    left: 67px;
+                    top: 145px;
+                    font-size: 31px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: -1;
+                }
+
+                img {
+                    width: 100%;
+                    height: 501px;
+                }
+            }
+
+            .big-pic2:hover {
+                background-color: #000000;
+                z-index: 1;
+
+                img {
+                    opacity: 0;
+                }
+            }
+
+            .three-img {
+                position: relative;
+                bottom: 237px;
+
+                span {
+                    position: absolute;
+                    left: 121px;
+                    top: 95px;
+                    font-size: 31px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: -1;
+                }
+            }
+
+            .three-img:hover {
+                background-color: #000000;
+                z-index: 1;
+
+                img {
+                    opacity: 0;
+                }
+            }
+
+            .four-img {
+                position: relative;
+                bottom: 236px;
+
+                span {
+                    position: absolute;
+                    left: 62px;
+                    top: 95px;
+                    font-size: 31px;
+                    color: white;
+                    font-weight: 800;
+                    z-index: -1;
+                }
+            }
+
+            .four-img:hover {
+                background-color: #000000;
+                z-index: 1;
+
+                img {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .big-pic3 {
+
+            position: relative;
+            background-color: red;
+            top: 646px;
+            width: 73%;
+            height: 267px;
+            left: 39px;
+
+            span {
+                position: absolute;
+                left: 162px;
+                top: 95px;
+                font-size: 31px;
+                color: white;
+                font-weight: 800;
+                z-index: -1;
+            }
+
+            img {
+                width: 100%;
+                height: 267px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        .big-pic3:hover {
+            background-color: #000000;
+            z-index: 1;
+
+            img {
+                opacity: 0;
+            }
+        }
+    }
+}
